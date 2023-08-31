@@ -146,8 +146,7 @@ body {
       padding: 5rem; } }
   .header__logo {
     height: 3rem;
-    justify-self: center;
-    align-items: center; }
+    justify-self: center; }
   .header__btn {
     align-self: start;
     justify-self: start; }
@@ -167,7 +166,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 3rem;
-    justify-items: center; }
+    justify-items: center;
+    align-items: center; }
     .header__seenon-logos img {
       max-height: 2.5rem;
       max-width: 100%;
@@ -208,17 +208,26 @@ body {
 
 .features {
   grid-column: center-start / center-end;
-  margin: 15rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem;
-  align-items: start; }
+  margin: 15rem 0; }
+  @supports (display: grid) {
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 6rem;
+      align-items: start; } }
 
 .feature {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 6rem;
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem; }
+  @supports (display: grid) {
+    .feature {
+      width: auto;
+      margin-bottom: 0; } }
   .feature__icon {
     fill: #c69963;
     width: 4.5rem;
