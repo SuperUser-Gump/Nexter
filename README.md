@@ -38,7 +38,7 @@ The design is responsive and adapts to different screen sizes, making it accessi
 
 ## Getting Started
 
-1. Clone the repository: `https://github.com/SuperUser-Gump/Nexter.git`
+1. Clone the repository: `git clone https://github.com/SuperUser-Gump/Nexter.git`
 2. Navigate to the project directory: `cd nexter`
 3. Open the `index.html` file in a web browser to view the website.
 
